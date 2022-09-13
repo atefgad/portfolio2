@@ -1,0 +1,75 @@
+/* ========== loading styles ========= */
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.profile__img {
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 130px;
+  margin-top: -1rem;
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  background: var(--main__color);
+  border: 2px solid var(--white);
+  overflow: visible !important;
+  /* animation: animi 3.75s linear infinite; */
+}
+
+@media (max-width: 768px) {
+  .profile__img {
+    margin: 5rem auto 0 auto;
+  }
+}
+
+.profile__img img {
+  width: 190px;
+  height: 110px;
+  animation: animi2 2.5s linear infinite;
+  background-color: transparent;
+  filter: drop-shadow(1px 3px 2px var(--white)) !important;
+}
+.profile__img span {
+  overflow: visible !important;
+}
+
+@keyframes animi {
+  0%,
+  100% {
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+
+  33% {
+    border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+
+  66% {
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
+}
+
+@keyframes animi2 {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: sepia(0%);
+  }
+
+  33% {
+    transform: scale(0.7);
+    filter: sepia(70%);
+  }
+
+  66% {
+    filter: sepia(80%);
+  }
+
+  80% {
+    filter: sepia(100%);
+  }
+}

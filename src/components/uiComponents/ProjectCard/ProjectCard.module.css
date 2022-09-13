@@ -1,0 +1,38 @@
+/************* ProjectCard Styles
+************************************************/
+
+.pro__item {
+  margin-top: 2rem;
+}
+
+.thumbnail {
+}
+.thumbnail img {
+  width: 100%;
+  border-radius: 5px !important;
+  /* box-shadow: 0 25px 65px rgba(0, 0, 0, 10%); */
+  transition: 0.2s ease-in-out;
+  cursor: pointer !important;
+  z-index: 1;
+  filter: brightness(0.3);
+}
+
+.thumbnail:hover img {
+  transform: translate3d(0, -10px, 0);
+  box-shadow: 0 50px 80px -10px rgba(0, 0, 0, 17%);
+  filter: brightness(1);
+}
+
+.content {
+  padding-top: 20px;
+}
+.content p {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--main__color);
+}
+
+.content h4 a {
+  color: var(--white);
+}

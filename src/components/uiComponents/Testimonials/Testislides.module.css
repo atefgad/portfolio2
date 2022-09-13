@@ -1,0 +1,46 @@
+/* testi slides */
+.__comment {
+  color: var(--white);
+  font-size: 22px;
+  transition: 0.3s;
+}
+.__comment:hover {
+  color: var(--gry);
+}
+.__author {
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+.__text {
+  margin-top: 0;
+}
+.__text h4 {
+  margin-bottom: 1px;
+}
+.__text span {
+  color: var(--gry);
+  font-size: 14px;
+}
+.testi__qoute {
+  position: absolute;
+  right: 170px;
+  bottom: 20px;
+  z-index: -1;
+  animation: animScale infinite 3s linear;
+}
+.testi__qoute i {
+  font-size: 7rem;
+  color: var(--bg__dark_color);
+}
+@keyframes animScale {
+  0% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}

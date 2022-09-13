@@ -1,0 +1,220 @@
+/********* Header Styles
+*******************************/
+.header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h5 {
+  font-size: 3rem;
+  margin: 0;
+  display: inline-block;
+}
+.logo h5 a:hover {
+  color: var(--white);
+}
+.logo h5 a:hover b {
+  color: var(--main__color);
+}
+.logo h5 b {
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.nav__menu a {
+  color: var(--gry);
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav__menu a:hover {
+  color: var(--main__color);
+}
+.nav__menu .active {
+  color: var(--main__color);
+}
+
+.nav__right p {
+  color: var(--gry);
+  margin-left: 20px;
+  position: relative;
+}
+.nav__right p a {
+  /* color: var(--white); */
+}
+.nav__right i {
+  color: var(--main__color);
+}
+
+.nav__right p::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -7px;
+  width: 1px;
+  height: 15px;
+  background: var(--gry);
+}
+
+.mobile__menu i {
+  font-size: 1.3rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mobile__menu i:hover {
+  color: var(--main__color);
+}
+
+.mobile__menu {
+  display: none;
+}
+
+/* ========== responsive ========= */
+
+@media (max-width: 992px) {
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: #171f3897;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  .active__menu {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--bg__dark_color);
+    overflow: hidden;
+  }
+
+  .nav__menu::before {
+    content: "";
+    position: absolute;
+    left: -90px;
+    top: -90px;
+    height: 270px;
+    width: 90%;
+    border-radius: 130% 100%;
+    background-color: var(--bg__color);
+  }
+  .nav__menu::after {
+    content: "";
+    position: absolute;
+    right: -60%;
+    bottom: -70px;
+    height: 180px;
+    width: 95%;
+    border-radius: 130% 100%;
+    background-color: var(--bg__color);
+  }
+  .nav__menu li {
+    width: auto;
+  }
+  .nav__menu a {
+    width: 100%;
+    height: auto;
+    padding: 30px 5px;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--bg__color); */
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+  }
+  .nav__menu a::after {
+    content: "";
+    position: absolute;
+    left: -100%;
+    bottom: 40px;
+    height: 5px;
+    width: 105%;
+    background-color: var(--gry);
+    opacity: 0.5;
+    z-index: -1;
+    transition: 0.3s;
+  }
+  .nav__menu a:hover::after,
+  .nav__menu .active::after {
+    background-color: var(--bg__color);
+    opacity: 1;
+    left: 0;
+    height: 20px;
+  }
+
+  .nav__menu a::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    bottom: 17px;
+    height: 80px;
+    width: 80px;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    background-color: var(--bg__color);
+    z-index: -1;
+    transition: 0.3s;
+  }
+  .nav__menu a:hover::before,
+  .nav__menu .active::before {
+    transform: scale(1.5);
+  }
+
+  .nav__right {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  .logo h1 {
+    font-size: 1.3rem !important;
+  }
+}

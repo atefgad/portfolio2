@@ -1,0 +1,239 @@
+:root {
+  /* --main__color: #ac4ed6; */
+  --main__color: #8f44fd;
+  --bg__color: #0e1630;
+  --bg__dark_color: #171f38;
+  --white: #ffffff;
+  --gry: #808dad;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  background-color: var(--bg__color) !important;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--white);
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+a {
+  color: unset;
+  text-decoration: none !important;
+  transition: 0.3s;
+}
+a:hover {
+  color: var(--main__color) !important;
+}
+
+p {
+  color: var(--gry);
+}
+
+li {
+  list-style-type: none;
+}
+
+.text__main {
+  color: var(--main__color);
+}
+
+.whatsAppIcon {
+  position: fixed;
+  right: 35px;
+  bottom: 50px;
+  z-index: 9999;
+}
+.whatsAppIcon:hover a {
+  transform: scale(0.8);
+}
+.whatsAppIcon a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #00c853 !important;
+}
+.whatsAppIcon i {
+  font-size: 40px;
+  color: #fff;
+}
+
+/* btn */
+.btn-outline-primary {
+  color: var(--main__color) !important;
+  border-color: var(--main__color) !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+  color: var(--white) !important;
+  background-color: var(--main__color) !important;
+  border-color: var(--main__color) !important;
+}
+.btn-outline-primary:focus {
+  box-shadow: none !important;
+}
+/*  section Head  */
+.title-link {
+  display: flex;
+  font-size: 1.222rem;
+  color: var(--main__color) !important;
+  cursor: pointer !important;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.title-link:hover a {
+  color: var(--gry) !important;
+}
+.title-link:after {
+  background-image: url(../public/images/blob.svg);
+  background-position: 50%;
+  bottom: -60px;
+  content: "";
+  height: 150px;
+  position: absolute;
+  right: 7px;
+  transition: all 0.2s ease-in-out;
+  width: 150px;
+  z-index: -1;
+}
+.title-link:hover::after {
+  transform: translateX(20px);
+}
+
+@media only screen and (max-width: 550px) {
+  .title-link {
+    font-size: 1rem;
+  }
+  .title-link::after {
+    transform: translateX(20px);
+  }
+}
+
+/*  sub title  */
+.sub__title {
+  color: var(--main__color) !important;
+  font-weight: 400;
+  margin-left: 40px;
+  position: relative;
+  display: inline-block;
+}
+.sub__title:before {
+  left: -40px;
+}
+.sub__title:after {
+  right: -40px;
+}
+.sub__title:after,
+.sub__title:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 1px;
+  background: var(--main__color);
+}
+
+@media (min-width: 900px) {
+  .custom-container {
+    margin: 0px auto;
+    width: 900px !important;
+  }
+}
+
+section {
+  padding-top: 150px;
+}
+
+.primary__btn {
+  background: #171f38 !important;
+  padding: 7px 25px !important;
+  border: 1px solid var(--main__color) !important;
+  border-radius: 5px;
+}
+
+.primary__btn a {
+  text-decoration: none;
+  color: var(--main__color);
+  background: transparent !important;
+}
+
+.secondary__btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+}
+
+.secondary__btn a {
+  color: var(--main__color) !important;
+}
+.primary__btn a:hover,
+.secondary__btn a:hover {
+  color: var(--main__color);
+}
+
+.sticky__nav {
+  position: sticky;
+  background-color: var(--bg__dark_color);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 0px -6px 17px var(--main__color) !important;
+  z-index: 9999;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--gry);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: var(--bg__dark_color);
+}
+
+@media only screen and (max-width: 992px) {
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding-top: 110px;
+  }
+}
+
+@media (max-width: 575px) {
+  .text-sm-center {
+    text-align: center !important;
+  }
+}

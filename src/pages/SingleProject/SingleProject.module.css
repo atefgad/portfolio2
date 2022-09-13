@@ -1,0 +1,25 @@
+/************* Single Project Details Styles
+************************************************/
+.project__details {
+  padding-top: 2rem;
+}
+.main__preview__img {
+  width: 100% !important;
+}
+.image__Preview {
+  padding: 50px 0;
+}
+.image__Preview img {
+  width: 100% !important;
+}
+
+.gallery__images {
+  padding: 50px 0;
+  user-select: none;
+}
+.gallery__images img {
+  width: 100% !important;
+}
+/* .gallery__images span img {
+   min-height: 200px; 
+} */

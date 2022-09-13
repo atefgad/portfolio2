@@ -1,0 +1,66 @@
+/******* Bannar Styles
+*************************/
+.bannar {
+  overflow: hidden;
+  background-color: var(--main__color);
+  position: relative;
+  margin: 6rem 0;
+}
+.left__info {
+  padding: 15px 0;
+}
+.b__title {
+  color: var(--white);
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: 900;
+}
+.right__info {
+  background-color: var(--gry);
+  height: 100%;
+  padding-top: 38px;
+  padding-bottom: 49px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+  z-index: 2;
+}
+.right__info::before {
+  content: "";
+  height: 100%;
+  width: 200%;
+  position: absolute;
+  background-color: var(--gry);
+  z-index: -2;
+  left: 100%;
+  top: 0;
+}
+
+.text__content p {
+  font-size: 45px !important;
+  line-height: 60px;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.text__content p a {
+  position: relative;
+  text-decoration: none;
+  color: var(--main__color);
+}
+.text__content p a:before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  background-color: var(--main__color);
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+.text__content p a:hover:before {
+  transform-origin: right center;
+  transform: scaleX(0);
+}

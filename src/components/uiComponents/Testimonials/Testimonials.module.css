@@ -1,0 +1,19 @@
+/* testimonials */
+.testimonials {
+  background-color: var(--bg__dark_color);
+  min-height: 350px;
+  padding: 0 !important;
+  margin-top: 5rem;
+}
+.testi__wrapper {
+  background-color: var(--bg__color);
+  min-height: 300px;
+  padding: 3rem;
+  transform: translateY(-80px);
+  border: 1px solid var(--bg__dark_color);
+  box-shadow: 1px -3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.testi__title__wrapper h2 {
+  font-size: 3.5rem;
+}

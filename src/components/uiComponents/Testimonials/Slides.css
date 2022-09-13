@@ -1,0 +1,39 @@
+/* sliders */
+.testi__slides {
+  min-height: 250px;
+}
+.testi__slides .swiper-wrapper {
+  height: 250px;
+}
+.testi__slides .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+.testi__slides .swiper-button-prev {
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 0;
+
+  background-color: var(--bg__dark_color);
+}
+.testi__slides .swiper-button-next {
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 55px;
+  background-color: var(--main__color);
+}
+.testi__slides .swiper-button-prev,
+.testi__slides .swiper-button-next {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.testi__slides .swiper-button-prev::after,
+.testi__slides .swiper-button-next::after {
+  color: var(--white);
+  font-size: 22px;
+}
