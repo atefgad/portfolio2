@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { Toaster } from "react-hot-toast";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import { motion, AnimatePresence } from "framer-motion";
@@ -72,7 +72,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<Page404 />} />
               </Routes>
-
+              <Toaster position="top-center" reverseOrder={false} />
               <Footer />
             </motion.div>
           </ScrollToTop>

@@ -1,31 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col } from "reactstrap";
+import { Container } from "reactstrap";
+import Shapes from "../Shapes";
 
 import classes from "./Bannar.module.css";
 
 const Bannar = ({ title, subtitle }) => {
   return (
-    <div className={`${classes.bannar}`}>
+    <div className={`${classes.cta__wrap}`}>
       <Container>
-        <Row className="align-items-center">
-          <Col lg="3" md="4">
-            <div className={`${classes.left__info}`}>
-              <h2 className={`${classes.b__title}`}>{title}</h2>
-            </div>
-          </Col>
-          <Col lg="9" md="8">
-            <div className={`${classes.right__info} d-flex align-items-center`}>
-              <div className={`${classes.text__content}`}>
-                <p>
-                  {subtitle} <br />
-                  Please <Link to="/contact">Contact Me?</Link>
-                </p>
-              </div>
-            </div>
-          </Col>
-        </Row>
+        <div className="wraper__content">
+          <h2 className={`${classes.cta__title}`}>{title}</h2>
+
+          <p className={`${classes.cta__text}`}>{subtitle}</p>
+          <Link className={`btn btn-default ${classes.cta__btn}`} to="/contact">
+            <i className="ri-phone-line"></i> Request a Quote
+          </Link>
+        </div>
       </Container>
+      <Shapes />
     </div>
   );
 };

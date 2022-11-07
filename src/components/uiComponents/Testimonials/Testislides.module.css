@@ -17,6 +17,7 @@
 }
 .__text h4 {
   margin-bottom: 1px;
+  font-size: 1rem;
 }
 .__text span {
   color: var(--gry);

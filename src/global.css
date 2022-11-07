@@ -54,6 +54,16 @@ li {
 .text__main {
   color: var(--main__color);
 }
+.text__gry {
+  color: var(--gry);
+}
+.text__white {
+  color: var(--white);
+}
+
+.ri-star-fill {
+  color: #faca4f !important;
+}
 
 .whatsAppIcon {
   position: fixed;

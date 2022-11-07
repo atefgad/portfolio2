@@ -1,8 +1,25 @@
 /************* Single Project Details Styles
 ************************************************/
+.project__heading {
+  font-size: 40px;
+  width: 700px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
 .project__details {
   padding-top: 2rem;
 }
+.project__details .feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.project__details .feedback small {
+  margin-top: -7px;
+}
+
 .main__preview__img {
   width: 100% !important;
 }

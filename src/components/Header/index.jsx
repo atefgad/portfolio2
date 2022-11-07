@@ -33,8 +33,8 @@ const Header = () => {
           {/*__ LOGO __*/}
           <div className={`${classes.logo}`}>
             <h5>
-              <Link to="/" className="text__main">
-                a<b>g</b>
+              <Link to="/" className="text__gry">
+                {`< `} <span className="text__main">a</span> <b>g</b> {`/> `}
               </Link>
             </h5>
           </div>

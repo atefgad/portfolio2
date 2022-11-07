@@ -42,7 +42,7 @@ const Services = () => {
                 icon="ri-code-s-slash-line"
               />
               <div>
-                <ServicesItem title="Business Stratagy" icon="ri-pulse-fill" />
+                <ServicesItem title="Ui/Ux Design" icon="ri-layout-3-line" />
 
                 <ServicesItem
                   title="Marketing & Reporting"
@@ -52,7 +52,7 @@ const Services = () => {
 
               <ServicesItem
                 title="Wordpress Development"
-                icon="ri-code-s-slash-line"
+                icon="ri-code-box-line"
               />
             </div>
           </Col>

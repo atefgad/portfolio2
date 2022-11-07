@@ -13,7 +13,9 @@ const ProjectCard = ({ item }) => {
         </Link>
       </div>
       <div className={`${classes.content}`}>
-        <p>{category}</p>
+        <p className="text__main badge rounded-pill bg-light my-2">
+          {category}
+        </p>
         <div className="d-flex justify-content-between align-items-center">
           <h4>
             <Link to={`/projects/${id}`}>{title}</Link>

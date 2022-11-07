@@ -10,7 +10,7 @@ const projects = [
       "/images/projects/p1/p1-3.webp",
     ],
     keyword: ["React.js", "Redux", "Bootstrap"],
-    liveUrl: "https://shop.atef-gad.com/",
+    liveUrl: "https://smrty.shop/",
   },
   {
     id: "2",
@@ -81,7 +81,7 @@ const projects = [
     id: "7",
     title: "Jobz | Bootstrap template",
     client: "Khamsat",
-    category: "React.js",
+    category: "Bootstrap",
     img: [
       "/images/projects/p7/p7-1.webp",
       "/images/projects/p7/p7-2.webp",

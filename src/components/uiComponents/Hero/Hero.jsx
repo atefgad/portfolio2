@@ -16,7 +16,7 @@ const Hero = () => {
               </h2>
               <h3 className={`${classes.name}`}>Frontend Developer</h3>
               <p className={`${classes.text}`}>
-                A Freelance UI/UX and Frontend Web Developer based In Cairo,
+                A Freelance Frontend Web Developer based In Cairo,
                 Egypt
               </p>
               <div className={`${classes.__list}`}>

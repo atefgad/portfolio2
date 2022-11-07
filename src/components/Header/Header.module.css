@@ -13,7 +13,7 @@
 }
 
 .logo h5 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
   display: inline-block;
 }
@@ -25,6 +25,7 @@
 }
 .logo h5 b {
   color: var(--white);
+  margin-left: -9px;
   transition: 0.3s;
 }
 

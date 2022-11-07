@@ -10,14 +10,12 @@ const Testimonials = () => {
     <section className={`${classes.testimonials}`} id="testimonials">
       <Container>
         <div className={`${classes.testi__wrapper}`}>
-          <Row>
+          <Row className="d-flex justify-content-center align-items-center">
             <Col lg="4" md="6">
               <div className={`${classes.testi__title__wrapper}`}>
                 <h5 className="sub__title">testimonials</h5>
                 <h2 className="">
-                  What do
-                  <br /> my <span className="text__main">Clients</span> say
-                  <br /> about Me..?
+                  <span className="text__main">Clients</span> reviews
                 </h2>
               </div>
             </Col>
