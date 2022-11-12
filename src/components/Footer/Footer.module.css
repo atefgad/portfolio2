@@ -33,7 +33,7 @@
   color: var(--main__color);
 }
 
-.nav__menu a.active {
+.nav__menu .active {
   color: var(--main__color);
 }
 

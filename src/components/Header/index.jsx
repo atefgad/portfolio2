@@ -68,11 +68,16 @@ const Header = () => {
             <div className={`${classes.nav__right} ms-3`}>
               <p className="d-flex align-items-center gap-1 mb-0">
                 {" "}
-                <a href="tel:+2001017857849">
-                  <i className="ri-phone-line"></i> +2001017857849
+                <a href="tel:+201017857849">
+                  <i className="ri-phone-fill"></i> +201017857849
                 </a>
               </p>
             </div>
+            {/*__ Close Button menu __*/}
+            <span className={`${classes.menu__close__btn}`}>
+              <i className="ri-close-fill" onClick={toggleMenu}></i>
+              <b>Close </b>
+            </span>
           </div>
           {/*__ mobile Button menu __*/}
           <span className={`${classes.mobile__menu}`}>

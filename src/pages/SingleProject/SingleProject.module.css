@@ -6,15 +6,6 @@
   max-width: 100%;
   margin-bottom: 30px;
 }
-.project__details {
-  padding-top: 2rem;
-}
-.project__details .feedback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
 
 .project__details .feedback small {
   margin-top: -7px;
@@ -40,3 +31,7 @@
 /* .gallery__images span img {
    min-height: 200px; 
 } */
+
+.sub__title2 {
+  color: var(--white) !important;
+}

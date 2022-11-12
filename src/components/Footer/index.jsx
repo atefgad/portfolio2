@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import classes from "./Footer.module.css";
 import { menuLinks, socialLinks } from "../../data/main";
@@ -20,7 +20,14 @@ const Footer = () => {
                   key={index}
                   // className={router.asPath == item.path ? classes.active : ""}
                 >
-                  <Link to={item.path}>{item.display}</Link>
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      isActive ? classes.active : null
+                    }
+                  >
+                    {item.display}
+                  </NavLink>
                 </li>
               ))}
             </div>

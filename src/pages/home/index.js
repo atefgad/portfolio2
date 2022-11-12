@@ -1,4 +1,10 @@
-import { Hero, TopProjects, Services, Testimonials } from "../../components";
+import {
+  Hero,
+  TopProjects,
+  Services,
+  Testimonials,
+  Bannar,
+} from "../../components";
 
 import { motion } from "framer-motion";
 
@@ -21,6 +27,7 @@ export default function Home() {
       <TopProjects />
       <Services />
       <Testimonials />
+      <Bannar title="I can bring your idea to life!" />
     </motion.div>
   );
 }

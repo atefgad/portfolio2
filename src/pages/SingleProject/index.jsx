@@ -37,7 +37,7 @@ const SingleProject = ({ projects }) => {
       variants={animations}
       initial="initial"
       animate="animate"
-      className={`${classes.project__details}`}
+      className={`${classes.single__project}`}
     >
       <Container>
         <Row
@@ -50,13 +50,13 @@ const SingleProject = ({ projects }) => {
               {getProject.category}
             </h6>
             <h1>{getProject.title}</h1>
-            <div className="align-items-center mt-3 mb-3">
+            <div className="align-items-center">
               <p>
                 <span className="text__main font-weight-bold">
                   <b>const</b>
                 </span>{" "}
                 <i>technologies </i> =<span className="text__main"> [</span>{" "}
-                {getProject.keyword.join(" | ")}{" "}
+                {getProject.keyword.join(" , ")}{" "}
                 <span className="text__main">]</span>;
               </p>
             </div>
@@ -69,7 +69,7 @@ const SingleProject = ({ projects }) => {
             </div>
             */}
 
-            <div className="text-center">
+            <div className="text-lg-center">
               <a
                 className="btn btn-outline-primary w-50"
                 href={getProject.liveUrl}
@@ -78,9 +78,13 @@ const SingleProject = ({ projects }) => {
               >
                 Live Preview
               </a>
-              <p className="feedback">
-                <small className="mb-0">Client Feedback: </small>
-                <br />
+              <p className="mb-0 mt-2">
+                <small
+                  className="mt-0 d-block"
+                  style={{ marginBottom: "-5px" }}
+                >
+                  Client Feedback:{" "}
+                </small>
                 <i className="ri-star-fill"></i>
                 <i className="ri-star-fill"></i>
                 <i className="ri-star-fill"></i>
@@ -116,29 +120,6 @@ const SingleProject = ({ projects }) => {
         />
       </div>
 
-      {/* gallery Images 
-      {getProject.img.length > 1 && (
-        <div className={`${classes.gallery__images}`}>
-          <Container>
-            <Row>
-              {getProject.img.map((item, index) => (
-                <Col lg="4" md="6" key={index}>
-                  <div>
-                    <img
-                      src={item}
-                      alt={"atef gad - " + getProject.title}
-                      height={600}
-                    />
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </Container>
-        </div>
-      )}
-
-      */}
-
       {/* Bannar */}
       <Bannar
         title="I can bring your idea to life!"
@@ -147,10 +128,11 @@ const SingleProject = ({ projects }) => {
 "
       />
 
+      {/* Related Work */}
       {getProjectsByCategory.length > 1 ? (
         <Container className="my-5 ">
           <div>
-            <h2>Related Work</h2>
+            <h2 className="sub__title text-light">Related Work</h2>
             <Row>
               {getProjectsByCategory.map((item, index) => (
                 <Col md="6" lg="4" key={index}>

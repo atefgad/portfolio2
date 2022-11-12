@@ -69,7 +69,7 @@ function App() {
                     element={<SingleProject projects={projects} />}
                   />
                 </Route>
-                <Route path="/contact" element={<Contact />} />
+                <Route path="contact" element={<Contact />} />
                 <Route path="*" element={<Page404 />} />
               </Routes>
               <Toaster position="top-center" reverseOrder={false} />

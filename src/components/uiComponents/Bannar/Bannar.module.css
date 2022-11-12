@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--main__color);
+  background-color: #41246c;
   min-height: 394px;
   margin: 0 auto;
   color: var(--white);

@@ -11,10 +11,12 @@ const Bannar = ({ title, subtitle }) => {
       <Container>
         <div className="wraper__content">
           <h2 className={`${classes.cta__title}`}>{title}</h2>
+          {subtitle ? (
+            <p className={`${classes.cta__text}`}>{subtitle}</p>
+          ) : null}
 
-          <p className={`${classes.cta__text}`}>{subtitle}</p>
           <Link className={`btn btn-default ${classes.cta__btn}`} to="/contact">
-            <i className="ri-phone-line"></i> Request a Quote
+            Contact Me
           </Link>
         </div>
       </Container>
