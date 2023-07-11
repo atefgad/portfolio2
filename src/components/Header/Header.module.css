@@ -54,12 +54,15 @@
 .nav__menu .active {
   color: var(--main__color);
 }
-
+.nav__right {
+  display: flex;
+}
 .nav__right p {
   color: var(--gry);
   margin-left: 20px;
   position: relative;
 }
+
 .nav__right p a {
   /* color: var(--white); */
 }
@@ -67,7 +70,7 @@
   /* color: var(--main__color); */
 }
 
-.nav__right p::before {
+/* .nav__right p::before {
   content: "";
   position: absolute;
   top: 40%;
@@ -75,7 +78,7 @@
   width: 1px;
   height: 15px;
   background: var(--gry);
-}
+} */
 
 .mobile__menu i {
   font-size: 1.3rem;
@@ -95,10 +98,10 @@
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 9999999;
   position: absolute;
   top: 25px;
-  right: 5%;
+  left: 5%;
   cursor: pointer;
   color: var(--white);
 }
@@ -128,7 +131,7 @@
     width: 100%;
     height: 100%;
     background: #171f3897;
-    z-index: 99999;
+    z-index: 9999999;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -146,6 +149,8 @@
     right: 0;
     width: 100%;
     height: 100%;
+    padding-top: 30px;
+    z-index: 9999999;
     flex-direction: column;
     justify-content: center;
     background: var(--bg__dark_color);
@@ -178,8 +183,8 @@
   .nav__menu a {
     width: 100%;
     height: auto;
-    padding: 30px 5px;
-    font-size: 4rem;
+    padding: 10px 5px;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,16 +201,15 @@
     height: 5px;
     width: 105%;
     background-color: var(--gry);
-    opacity: 0.5;
+    opacity: 0;
     z-index: -1;
     transition: 0.3s;
   }
   .nav__menu a:hover::after,
   .nav__menu .active::after {
-    background-color: var(--bg__color);
-    opacity: 1;
+    opacity: 0.2;
     left: 0;
-    height: 20px;
+    height: 15px;
   }
 
   .nav__menu a::before {
@@ -213,8 +217,8 @@
     position: absolute;
     left: -5px;
     bottom: 17px;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
     background-color: var(--bg__color);
     z-index: -1;
@@ -222,7 +226,7 @@
   }
   .nav__menu a:hover::before,
   .nav__menu .active::before {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 
   .nav__right {

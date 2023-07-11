@@ -36,7 +36,10 @@
   color: rgb(119, 119, 121);
 }
 .text {
-  margin-bottom: 3rem;
+  font-size: 17px;
+  color: rgb(201, 201, 208) !important;
+  margin-bottom: 3.5rem;
+  margin: 0 !important;
 }
 
 @media (min-width: 576px) {
@@ -57,7 +60,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 2.5rem;
 }
 
 @media (max-width: 768px) {

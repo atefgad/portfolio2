@@ -4,7 +4,7 @@
   --bg__color: #0e1630;
   --bg__dark_color: #171f38;
   --white: #ffffff;
-  --gry: #808dad;
+  --gry: #cacccf;
 }
 
 html,
@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 h2 {
@@ -89,6 +89,16 @@ li {
 }
 
 /* btn */
+.btn-primary {
+  background-color: var(--main__color) !important;
+  border-color: var(--main__color) !important;
+  color: var(--white) !important;
+}
+.btn-primary:hover,
+.btn-primary:active {
+  opacity: 0.8;
+  color: var(--white) !important;
+}
 .btn-outline-primary {
   color: var(--main__color) !important;
   border-color: var(--main__color) !important;

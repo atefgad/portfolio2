@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Bannar from "../../components/uiComponents/Bannar";
 import { useParams } from "react-router-dom";
 import ProjectCard from "../../components/uiComponents/ProjectCard";
+import { ScrollAnimation, Slides } from "../../components";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -132,14 +133,27 @@ const SingleProject = ({ projects }) => {
       {getProjectsByCategory.length > 1 ? (
         <Container className="my-5 ">
           <div>
-            <h2 className="sub__title text-light">Related Work</h2>
-            <Row>
+            <ScrollAnimation animate="fade-up" delay="230" duration="200">
+              <h2 className="sub__title text-light">Related Work</h2>
+            </ScrollAnimation>
+
+            <Slides products={getProjectsByCategory} />
+            {/* 
+          
+          <Row>
               {getProjectsByCategory.map((item, index) => (
                 <Col md="6" lg="4" key={index}>
-                  <ProjectCard item={item} />
+                  <ScrollAnimation
+                    animate={index % 2 === 0 ? "fade-up" : "fade-down"}
+                    delay={index + 1 * 200}
+                    duration={index + 1 * 200}
+                  >
+                    <ProjectCard item={item} />
+                  </ScrollAnimation>
                 </Col>
               ))}
             </Row>
+          */}
           </div>
         </Container>
       ) : null}

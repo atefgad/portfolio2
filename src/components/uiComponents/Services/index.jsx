@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
 import ServicesItem from "./ServicesItem";
+import ScrollAnimation from "../ScrollAnimation";
 import classes from "./Services.module.css";
 
 // const services = [
@@ -28,48 +29,63 @@ const Services = () => {
       <Container>
         <Row className="align-items-center">
           <Col md="4">
-            <h4 className="sub__title">What I can do..?!</h4>
-            <h2>
-              Services provide
-              <br />
-              for you.
-            </h2>
+            <ScrollAnimation animate="fade-up" delay="150" duration="150">
+              <h4 className="sub__title">What I can do..?!</h4>
+              <h2>
+                Services provide
+                <br />
+                for you.
+              </h2>
+            </ScrollAnimation>
           </Col>
           <Col md="8">
             <div className={`${classes.services__container}`}>
-              <ServicesItem
-                title="Web Development"
-                icon="ri-code-s-slash-line"
-              />
-              <div>
-                <ServicesItem title="Ui/Ux Design" icon="ri-layout-3-line" />
-
+              <ScrollAnimation animate="fade-up" delay="200" duration="200">
                 <ServicesItem
-                  title="Marketing & Reporting"
-                  icon="ri-lightbulb-fill"
+                  title="Web Development"
+                  icon="ri-code-s-slash-line"
                 />
+              </ScrollAnimation>
+              <div>
+                <ScrollAnimation animate="fade-up" delay="250" duration="200">
+                  <ServicesItem title="Ui/Ux Design" icon="ri-layout-3-line" />
+                </ScrollAnimation>
+
+                <ScrollAnimation animate="fade-up" delay="200" duration="200">
+                  <ServicesItem title="Marketing" icon="ri-lightbulb-fill" />
+                </ScrollAnimation>
               </div>
 
-              <ServicesItem
-                title="Wordpress Development"
-                icon="ri-code-box-line"
-              />
+              <ScrollAnimation animate="fade-up" delay="250" duration="200">
+                <ServicesItem
+                  title="Wordpress Development"
+                  icon="ri-code-box-line"
+                />
+              </ScrollAnimation>
             </div>
           </Col>
         </Row>
 
         <div className="icons__shapes">
           <span className="reactjs">
-            <img src="/images/icons/react.svg" alt="bootstrap" />
+            <ScrollAnimation animate="fade-up" delay="200" duration="200">
+              <img src="/images/icons/react.svg" alt="bootstrap" />
+            </ScrollAnimation>
           </span>
           <span className="bootstrap">
-            <img src="/images/icons/bootstrap.svg" alt="bootstrap" />
+            <ScrollAnimation animate="fade-up" delay="250" duration="200">
+              <img src="/images/icons/bootstrap.svg" alt="bootstrap" />
+            </ScrollAnimation>
           </span>
           <span className="sass">
-            <img src="/images/icons/sass.svg" alt="bootstrap" />
+            <ScrollAnimation animate="fade-up" delay="200" duration="200">
+              <img src="/images/icons/sass.svg" alt="bootstrap" />
+            </ScrollAnimation>
           </span>
           <span className="html5">
-            <img src="/images/icons/html5.svg" alt="bootstrap" />
+            <ScrollAnimation animate="fade-up" delay="300" duration="200">
+              <img src="/images/icons/html5.svg" alt="bootstrap" />
+            </ScrollAnimation>
           </span>
         </div>
       </Container>

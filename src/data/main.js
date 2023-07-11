@@ -1,6 +1,21 @@
 const projects = [
   {
     id: "1",
+    title: "m2market - Furniture Store | E-commerce web app",
+    client: "Frelance",
+    category: "React.js",
+    img: ["/images/projects/p8/p8-1.webp", "/images/projects/p8/p8-2.webp"],
+    keyword: [
+      "React.js",
+      "Redux-toolkit",
+      "Firebase-v9",
+      "Framer motion",
+      "Reactstrap",
+    ],
+    liveUrl: "https://m2market.atef-gad.com/",
+  },
+  {
+    id: "2",
     title: "smarty shop | E-commerce React.js web app",
     client: "upWork client",
     category: "React.js",
@@ -13,7 +28,7 @@ const projects = [
     liveUrl: "https://smrty.shop/",
   },
   {
-    id: "2",
+    id: "3",
     title: "Foody | POS System Web App For Restaurant",
     client: "upWork client",
     category: "React.js",
@@ -26,8 +41,8 @@ const projects = [
     liveUrl: "https://foody.atef-gad.com/",
   },
   {
-    id: "3",
-    title: "Erlebnisreisen Agypten | travel agency",
+    id: "4",
+    title: "infinity tours Egypt | travel agency",
     client: "other",
     category: "WordPress",
     img: [
@@ -36,10 +51,10 @@ const projects = [
       "/images/projects/p3/p3-3.webp",
     ],
     keyword: ["WordPress", "Bootstrap", "Html5", "Css3"],
-    liveUrl: "https://erlebnisreisen-eg.com/",
+    liveUrl: "https://infinitytoursegypt.com/",
   },
   {
-    id: "4",
+    id: "5",
     title: "alrbye clean | cleaning services agancy",
     client: "other",
     category: "WordPress",
@@ -52,7 +67,7 @@ const projects = [
     liveUrl: "http://alrbee.atef-gad.com/",
   },
   {
-    id: "5",
+    id: "6",
     title: "PizZat - online food delivery",
     client: "other",
     category: "React.js",
@@ -65,7 +80,7 @@ const projects = [
     liveUrl: "https://pizzzat.atef-gad.com/",
   },
   {
-    id: "6",
+    id: "7",
     title: "Mazaya - ReactJs website",
     client: "Khamsat",
     category: "React.js",
@@ -78,7 +93,7 @@ const projects = [
     liveUrl: "https://mazaya.atef-gad.com/",
   },
   {
-    id: "7",
+    id: "8",
     title: "Jobz | Bootstrap template",
     client: "Khamsat",
     category: "Bootstrap",

@@ -61,7 +61,7 @@
   line-height: 90px;
   background-color: transparent;
   /* background-color: var(--bg__dark_color); */
-  border: 1px solid var(--white);
+  /* border: 1px solid var(--white); */
   display: block;
   border-radius: 50px;
   text-align: center;

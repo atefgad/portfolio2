@@ -33,6 +33,13 @@
   color: var(--main__color);
 }
 
+.content h4 {
+  height: auto;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .content h4 a {
   color: var(--white);
 }

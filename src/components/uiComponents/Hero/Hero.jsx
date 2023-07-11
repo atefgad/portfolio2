@@ -12,12 +12,21 @@ const Hero = () => {
           <Col md="6" className="order-2 order-md-1">
             <div className="text-md-start text-sm-center">
               <h2 className={`${classes.subtitle}`}>
-                Hi, I'm <span>Atef</span>
+                Hi, I'm <span>Atef </span>
               </h2>
-              <h3 className={`${classes.name}`}>Frontend Developer</h3>
+              {/*
+              
+              <h3 className={`${classes.name}`}>
+                {" "}
+                Frontend Web Developer
+              </h3>
+              */}
+              <h5>A Freelance Frontend Web Developer </h5>
+              <small className="text__gry">based In Cairo, Egypt</small>{" "}
               <p className={`${classes.text}`}>
-                A Freelance Frontend Web Developer based In Cairo,
-                Egypt
+                <br /> I create modern <b>websites</b> and <b>web apps</b>. I
+                can <b className="text-lightt">solve</b> all your{" "}
+                <b>business</b> problems.
               </p>
               <div className={`${classes.__list}`}>
                 <div className={`${classes.social__list}`}>
