@@ -22,7 +22,7 @@ const Hero = () => {
               </h3>
               */}
               <h5>A Freelance Frontend Web Developer </h5>
-              <small className="text__gry">based In Cairo, Egypt</small>{" "}
+              <small className="text__gry">based In Sohag, Egypt</small>{" "}
               <p className={`${classes.text}`}>
                 <br /> I create modern <b>websites</b> and <b>web apps</b>. I
                 can <b className="text-lightt">solve</b> all your{" "}
@@ -73,10 +73,10 @@ const Hero = () => {
           <Col md="6" className="order-md-1">
             <div className={`${classes.profile__img}`}>
               <img
-                src="/images/avatar-logo.png"
+                src="/images/mylogo.png"
                 alt="atef gad"
-                width={270}
-                height={205}
+                width={250}
+                height={180}
               />
             </div>
           </Col>

@@ -41,7 +41,6 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--main__color) !important;
-  top: calc(50% - 44px) !important;
 }
 
 .swiper-button-prev,

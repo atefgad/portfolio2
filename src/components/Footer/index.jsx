@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import classes from "./Footer.module.css";
 import { menuLinks, socialLinks } from "../../data/main";
@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col lg="4" className={`${classes.scroll_arrow_btn}`}>
-            <a href="#" className="mx-auto" title="To top">
+            <a href="#!" className="mx-auto" title="To top">
               <i className="ri-arrow-up-s-line"></i>
             </a>
           </Col>
@@ -57,11 +57,7 @@ const Footer = () => {
           {/* ========= footer bottom ========= */}
           <Col lg="12">
             <div className={`${classes.footer__copyright}`}>
-              <p>
-                &copy; Copyright {year} - Developed by{" "}
-                <strong className="text__main">atef gad</strong>. All right
-                reserved.{" "}
-              </p>
+              <p>&copy; Copyright {year} - All right reserved. </p>
             </div>
           </Col>
         </Row>

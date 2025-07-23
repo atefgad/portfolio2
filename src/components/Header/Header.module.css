@@ -80,14 +80,14 @@
   background: var(--gry);
 } */
 
-.mobile__menu i {
-  font-size: 1.3rem;
+.mobile__menu {
+  font-size: 20px;
   color: var(--white);
   cursor: pointer;
   transition: 0.3s;
 }
-.mobile__menu i:hover {
-  color: var(--main__color);
+.mobile__menu:hover {
+  color: var(--main__color) !important;
 }
 
 .mobile__menu {
@@ -234,7 +234,7 @@
   }
 
   .mobile__menu {
-    display: block !important;
+    display: flex !important;
   }
   .menu__close__btn {
     display: flex;

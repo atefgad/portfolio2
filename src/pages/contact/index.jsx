@@ -29,9 +29,9 @@ const Contact = () => {
         <Row>
           <Col lg="6" md="6">
             <h4 className="sub__title mt-3">Contact me</h4>
-            <h2 className="mb-4 fs-1">
+            <h2 className="mb-4 underline fs-1">
               Don't hesitate to contact <br />{" "}
-              <strong className="text__main">with me</strong>
+              <strong className="text__main2">with me</strong>
             </h2>
 
             <ul className={`${classes.contact__info__list}`}>
@@ -40,7 +40,7 @@ const Contact = () => {
                   <i className="ri-map-pin-line"></i>
                 </span>
                 <a href="#!">
-                  <h6>Cairo - Egypt</h6>
+                  <h6>Sohag - Egypt</h6>
                 </a>
               </li>
               <li className={`${classes.info__item}`}>
@@ -55,8 +55,8 @@ const Contact = () => {
                 <span>
                   <i className="ri-phone-line"></i>
                 </span>
-                <a href="tel:0201017857849">
-                  <h6>+0201017857849</h6>
+                <a href="tel:2001017857849">
+                  <h6>+2001017857849</h6>
                 </a>
               </li>
             </ul>

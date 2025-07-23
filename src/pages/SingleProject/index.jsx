@@ -5,7 +5,6 @@ import classes from "./SingleProject.module.css";
 import { motion } from "framer-motion";
 import Bannar from "../../components/uiComponents/Bannar";
 import { useParams } from "react-router-dom";
-import ProjectCard from "../../components/uiComponents/ProjectCard";
 import { ScrollAnimation, Slides } from "../../components";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -46,10 +45,10 @@ const SingleProject = ({ projects }) => {
 "
         >
           {/* project Heading /Start */}
-          <Col lg="8" className="prject__heading">
-            <h6 className="text__main badge rounded-pill bg-light">
+          <Col lg="8" className={`${classes.prject__heading}`}>
+            <span className="text__main badge rounded-pill bg-light">
               {getProject.category}
-            </h6>
+            </span>
             <h1>{getProject.title}</h1>
             <div className="align-items-center">
               <p>
@@ -96,7 +95,7 @@ const SingleProject = ({ projects }) => {
           </Col>
           {/* Live Preview /End */}
 
-          <hr className="hr text-light mt-4 mb-5" />
+          <hr className="hr text-light mt-4" />
         </Row>
         <Row className="align-items-center">
           {/* Thum[IMG] */}

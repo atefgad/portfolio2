@@ -20,7 +20,7 @@ const Bannar = ({ title, subtitle }) => {
 
           <ScrollAnimation animate="fade-up" delay="250" duration="250">
             <Link
-              className={`btn btn-default ${classes.cta__btn}`}
+              className={`btn btn-primary btn-lg ${classes.cta__btn}`}
               to="/contact"
             >
               Contact Me

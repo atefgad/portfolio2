@@ -27,12 +27,12 @@ const Projects = ({ projects }) => {
       id="projects"
     >
       <Container fluid>
-        <div className="d-flex justify-content-around flex-column align-items-center">
+        <div className="d-flex justify-content-around flex-column align-items-center mb-5">
           <h5 className="sub__title">My Portfolio</h5>
           <h3 className="ms-md-5">Projects I've Built</h3>
         </div>
 
-        <Row className="px-md-5">
+        <Row className="px-md-5 d-flex justify-content-md-center">
           {projects.map((item, index) => (
             <motion.div
               className="col-lg-6 col-md-6 mb-5"

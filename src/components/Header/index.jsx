@@ -68,8 +68,12 @@ const Header = () => {
             <div className={`${classes.nav__right} ms-3`}>
               <p className="d-flex align-items-center gap-1 mb-0">
                 {" "}
-                <a className="btn btn-primary" href="tel:+201017857849">
-                  <i className="ri-phone-fill"></i> +201017857849
+                <a
+                  className="btn btn-primary d-flex align-content-center align-items-center gap-2"
+                  href="tel:+2001017857849"
+                >
+                  <i className="ri-phone-fill"></i>{" "}
+                  <span className="uppercase">Let's Talk</span>
                 </a>
               </p>
             </div>
@@ -80,9 +84,12 @@ const Header = () => {
             </span>
           </div>
           {/*__ mobile Button menu __*/}
-          <span className={`${classes.mobile__menu}`}>
-            <i className="ri-menu-line" onClick={toggleMenu}></i>
-          </span>
+          <div
+            onClick={toggleMenu}
+            className={`text-white d-md-none d-sm-flex gap-1 ${classes.mobile__menu}`}
+          >
+            <i className="ri-menu-line"></i> Menu
+          </div>
         </nav>
       </Container>
     </header>

@@ -7,6 +7,10 @@
   margin-bottom: 30px;
 }
 
+.project__heading h1 {
+  font-size: 18px;
+}
+
 .project__details .feedback small {
   margin-top: -7px;
 }
@@ -15,10 +19,11 @@
   width: 100% !important;
 }
 .image__Preview {
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 .image__Preview img {
   width: 100% !important;
+  height: auto;
 }
 
 .gallery__images {

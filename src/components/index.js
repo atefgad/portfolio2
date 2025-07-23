@@ -17,6 +17,7 @@ import Shapes from "./uiComponents/Shapes";
 import Bannar from "./uiComponents/Bannar";
 import Form from "./uiComponents/Form";
 import Slides from "./uiComponents/Sliders/Slides";
+import ArrowDown from "./uiComponents/ArrowDown";
 
 export {
   Header,
@@ -35,4 +36,5 @@ export {
   ScrollAnimation,
   Loading,
   ScrollToTop,
+  ArrowDown,
 };

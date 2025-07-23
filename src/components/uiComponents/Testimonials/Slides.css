@@ -10,18 +10,13 @@
   align-items: center;
 }
 .testi__slides .swiper-button-prev {
-  left: auto;
-  top: auto;
   right: 0;
-  bottom: 0;
-
+  bottom: 55px !important;
   background-color: var(--bg__dark_color);
 }
 .testi__slides .swiper-button-next {
-  left: auto;
-  top: auto;
   right: 0;
-  bottom: 55px;
+  bottom: 0;
   background-color: var(--main__color);
 }
 .testi__slides .swiper-button-prev,
@@ -30,6 +25,12 @@
   width: 55px;
   display: flex;
   align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: unset !important;
+  left: auto !important;
 }
 
 .testi__slides .swiper-button-prev::after,

@@ -10,13 +10,20 @@
 .top3 h3 {
   display: inline-block;
   /* margin-bottom: 2rem; */
-  font-size: 2.33rem;
+  font-size: 2rem;
   font-weight: 600;
   position: relative;
 }
 @media only screen and (max-width: 550px) {
   .top3 h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+  .top3 h3 svg {
+    height: 30px;
+    width: 30px;
+  }
+  .top3 h3::before {
+    display: none;
   }
 }
 
@@ -25,19 +32,29 @@
 } */
 
 .top3 h3::before {
-  content: "*";
+  content: "</>";
   position: absolute;
-  opacity: 0.1;
-  font-size: 200px;
+  opacity: 0.3;
+  font-size: 45px;
   font-weight: 700;
   width: 100%;
-  color: var(--gry);
+  color: var(--main__color);
   position: absolute !important;
-  top: -80px;
-  left: -30px;
+  top: -50px;
+  left: -10px;
 }
 
 .top3 h3::after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 70%;
+  left: 5px;
+  top: 45px;
+  border-top: 2px solid var(--main__color);
+  border-radius: 50%;
+}
+/* .top3 h3::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -46,4 +63,4 @@
   width: 85%;
   background-color: var(--main__color);
   opacity: 0.7;
-}
+} */
